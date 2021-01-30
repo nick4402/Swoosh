@@ -1,8 +1,8 @@
-package com.nick.swoosh
+package com.nick.swoosh.Controller
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.nick.swoosh.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -11,7 +11,7 @@ class MainActivity : BaseActivity() {
         setContentView(R.layout.activity_main)
 
         startBnt.setOnClickListener{
-            val leagueIntent = Intent(this,LeagueActivity::class.java)
+            val leagueIntent = Intent(this, LeagueActivity::class.java)
             startActivity(leagueIntent)
         }
     }
